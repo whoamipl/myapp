@@ -1,0 +1,9 @@
+com/example/restwsdemo/domain/ComputerResponse.class
+com/example/restwsdemo/entites/Monitor.class
+com/example/restwsdemo/entites/Warranty.class
+com/example/restwsdemo/entites/Producent.class
+com/example/restwsdemo/config/ApplicationConfig.class
+com/example/restwsdemo/service/ComputerManager.class
+com/example/restwsdemo/rest/ComputerRESTService.class
+com/example/restwsdemo/domain/Computer.class
+com/example/restwsdemo/entites/Owner.class

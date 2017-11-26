@@ -5,15 +5,16 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
-public class PersonsResponse {
+public class ComputerResponse {
 	
-	private List<Person> person;
 
-	public List<Person> getPerson() {
+	private List<Computer> person;
+
+	public List<Computer> getPerson() {
 		return person;
 	}
 
-	public void setPerson(List<Person> person) {
+	public void setPerson(List<Computer> person) {
 		this.person = person;
 	}
 
