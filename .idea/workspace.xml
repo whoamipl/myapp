@@ -2,53 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="665d6e3f-a12e-4201-b2d4-bc036345ff3b" name="Default" comment="Change domain.">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/example/restwsdemo/entites/Producent.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/restwsdemo/config/ApplicationConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/restwsdemo/domain/Computer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/restwsdemo/domain/ComputerResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/restwsdemo/entites/Monitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/restwsdemo/entites/Owner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/restwsdemo/entites/Producent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/restwsdemo/entites/Warranty.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/restwsdemo/rest/ComputerRESTService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/restwsdemo/service/ComputerManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/import.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo.war" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/classes/META-INF/persistence.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/classes/com/example/restwsdemo/config/ApplicationConfig.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/classes/com/example/restwsdemo/domain/Computer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/classes/com/example/restwsdemo/domain/ComputerResponse.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/classes/com/example/restwsdemo/entites/Monitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/classes/com/example/restwsdemo/entites/Owner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/classes/com/example/restwsdemo/entites/Producent.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/classes/com/example/restwsdemo/entites/Warranty.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/classes/com/example/restwsdemo/rest/ComputerRESTService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/classes/com/example/restwsdemo/service/ComputerManager.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/classes/import.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/lib/accessors-smart-1.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/lib/asm-5.0.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/lib/hamcrest-core-1.3.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/lib/json-path-2.2.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/lib/json-smart-2.2.1.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/lib/junit-4.12.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/restwsejbdemo/WEB-INF/lib/slf4j-api-1.7.16.jar" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/restwsejbdemo.iml" afterPath="$PROJECT_DIR$/myapp.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/restwsdemo/config/ApplicationConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/myapp/config/ApplicationConfig.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/restwsdemo/domain/Computer.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/myapp/domain/Computer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/restwsdemo/domain/ComputerResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/myapp/domain/ComputerResponse.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/restwsdemo/entites/Monitor.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/myapp/entites/Monitor.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/restwsdemo/entites/Owner.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/myapp/entites/Owner.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/restwsdemo/entites/Warranty.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/myapp/entites/Warranty.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/restwsdemo/rest/ComputerRESTService.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/myapp/rest/ComputerRESTService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/example/restwsdemo/service/ComputerManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/myapp/service/ComputerManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/restwsejbdemo_war.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/restwsejbdemo_war.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/restwsejbdemo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/restwsejbdemo_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/myapp/config/ApplicationConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/myapp/domain/Computer.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/myapp/domain/ComputerResponse.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/myapp/entites/Monitor.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/myapp/entites/Owner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/myapp/entites/Warranty.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/myapp/rest/ComputerRESTService.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/example/myapp/service/ComputerManager.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myapp.war" afterPath="$PROJECT_DIR$/target/myapp.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myapp/WEB-INF/classes/com/example/myapp/domain/Computer.class" afterPath="$PROJECT_DIR$/target/myapp/WEB-INF/classes/com/example/myapp/domain/Computer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/myapp/WEB-INF/classes/com/example/myapp/rest/ComputerRESTService.class" afterPath="$PROJECT_DIR$/target/myapp/WEB-INF/classes/com/example/myapp/rest/ComputerRESTService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/myapp/rest/ComputerRESTService.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/myapp/rest/ComputerRESTService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/myapp/service/ComputerManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/myapp/service/ComputerManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -124,13 +91,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComputerManager.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ComputerManager.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapp/service/ComputerManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="27" column="106" lean-forward="false" selection-start-line="27" selection-start-column="106" selection-end-line="27" selection-end-column="106" />
+            <state relative-caret-position="284">
+              <caret line="55" column="65" lean-forward="false" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1736#1737#0" expanded="true" />
+                <element signature="e#1811#1812#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -146,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComputerRESTService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComputerRESTService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapp/rest/ComputerRESTService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+            <state relative-caret-position="723">
+              <caret line="58" column="35" lean-forward="false" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,8 +189,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/example/myapp/entites/Owner.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myapp/entites/Monitor.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myapp/entites/Warranty.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/myapp/service/ComputerManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/example/myapp/domain/Computer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/myapp/rest/ComputerRESTService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/myapp/service/ComputerManager.java" />
       </list>
     </option>
   </component>
@@ -476,16 +446,15 @@
       <workItem from="1511713582370" duration="1251000" />
       <workItem from="1511714983757" duration="649000" />
       <workItem from="1511717975736" duration="3837000" />
-      <workItem from="1511863361306" duration="4362000" />
+      <workItem from="1511863361306" duration="6328000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18652000" />
+    <option name="totallyTimeSpent" value="20618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1449" y="-16" width="1422" height="882" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -506,7 +475,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32440057" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -593,6 +562,8 @@
           <caret line="40" column="29" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -735,6 +706,8 @@
           <caret line="40" column="29" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -753,6 +726,8 @@
           <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -813,6 +788,8 @@
           <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -873,6 +850,8 @@
           <caret line="37" column="25" lean-forward="false" selection-start-line="37" selection-start-column="25" selection-end-line="37" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1001,22 +980,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapp/service/ComputerManager.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapp/rest/ComputerRESTService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="106" lean-forward="false" selection-start-line="27" selection-start-column="106" selection-end-line="27" selection-end-column="106" />
+        <state relative-caret-position="723">
+          <caret line="58" column="35" lean-forward="false" selection-start-line="58" selection-start-column="35" selection-end-line="58" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapp/rest/ComputerRESTService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/myapp/service/ComputerManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+        <state relative-caret-position="284">
+          <caret line="55" column="65" lean-forward="false" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1736#1737#0" expanded="true" />
+            <element signature="e#1811#1812#0" expanded="true" />
           </folding>
         </state>
       </provider>

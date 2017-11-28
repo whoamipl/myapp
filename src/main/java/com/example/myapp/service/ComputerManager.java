@@ -53,7 +53,7 @@ public class ComputerManager {
     public java.lang.String test() {return "REST Service is running";}
 
     public void removeComputer(Long id) {
-        em.remove(id);
+        em.remove(new ComputerManager().getComputer(id.intValue()));
     }
 
 }

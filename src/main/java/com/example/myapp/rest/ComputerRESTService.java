@@ -48,15 +48,15 @@ public class ComputerRESTService {
 
 	@DELETE
 	@Path("removeComputer/{id}")
-	public void deleteComputer(@PathParam("id") Long id) {
-		pm.removeComputer(idFGIT);
+	public void deleteComputer(@PathParam("id") long id) {
+		pm.removeComputer(id);
 	}
 
 	//http://localhost:8080/restwsejbdemo/api/computer/addComputer@GET
 	@Path("test")
 	@Produces(MediaType.TEXT_PLAIN)
 	public String test() {
-		return "REST API /person is running today!";
+		return "REST API /computer is running today!";
 	}
 
 	@DELETE
