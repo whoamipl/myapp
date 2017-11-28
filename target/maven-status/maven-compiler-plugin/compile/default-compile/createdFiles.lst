@@ -1,9 +1,8 @@
-com/example/restwsdemo/domain/ComputerResponse.class
-com/example/restwsdemo/entites/Monitor.class
-com/example/restwsdemo/entites/Warranty.class
-com/example/restwsdemo/entites/Producent.class
-com/example/restwsdemo/config/ApplicationConfig.class
-com/example/restwsdemo/service/ComputerManager.class
-com/example/restwsdemo/rest/ComputerRESTService.class
-com/example/restwsdemo/domain/Computer.class
-com/example/restwsdemo/entites/Owner.class
+com/example/myapp/domain/Computer.class
+com/example/myapp/entites/Warranty.class
+com/example/myapp/entites/Monitor.class
+com/example/myapp/service/ComputerManager.class
+com/example/myapp/config/ApplicationConfig.class
+com/example/myapp/entites/Owner.class
+com/example/myapp/domain/ComputerResponse.class
+com/example/myapp/rest/ComputerRESTService.class

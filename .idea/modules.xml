@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/restwsejbdemo.iml" filepath="$PROJECT_DIR$/restwsejbdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myapp.iml" filepath="$PROJECT_DIR$/myapp.iml" />
     </modules>
   </component>
 </project>

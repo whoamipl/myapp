@@ -1,5 +1,8 @@
-/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/restwsdemo/service/ComputerManager.java
-/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/restwsdemo/rest/ComputerRESTService.java
-/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/restwsdemo/domain/ComputerResponse.java
-/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/restwsdemo/config/ApplicationConfig.java
-/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/restwsdemo/domain/Computer.java
+/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/myapp/service/ComputerManager.java
+/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/myapp/entites/Warranty.java
+/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/myapp/domain/Computer.java
+/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/myapp/rest/ComputerRESTService.java
+/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/myapp/entites/Monitor.java
+/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/myapp/domain/ComputerResponse.java
+/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/myapp/entites/Owner.java
+/home/whoami/Development/JavaProjects/restwsdemo/src/main/java/com/example/myapp/config/ApplicationConfig.java
