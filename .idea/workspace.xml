@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="665d6e3f-a12e-4201-b2d4-bc036345ff3b" name="Default" comment="Change domain.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/example/myapp/ComputerTest.groovy" afterPath="$PROJECT_DIR$/src/test/com/example/myapp/ComputerIT.groovy" />
-      <change beforePath="$PROJECT_DIR$/target/myapp.war" afterPath="$PROJECT_DIR$/target/myapp.war" />
-      <change beforePath="$PROJECT_DIR$/target/myapp/WEB-INF/classes/com/example/myapp/domain/Computer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/myapp/WEB-INF/lib/accessors-smart-1.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/myapp/WEB-INF/lib/asm-5.0.3.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/myapp/WEB-INF/lib/json-path-2.2.0.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/myapp/WEB-INF/lib/json-smart-2.2.1.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/myapp/WEB-INF/lib/slf4j-api-1.7.16.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.example.myapp.ComputerTest.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.example.myapp.ComputerTest.txt" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/example/myapp/ComputerTest.class" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -477,7 +466,7 @@
       <workItem from="1511874611955" duration="1083000" />
       <workItem from="1511880948451" duration="3854000" />
       <workItem from="1516897343013" duration="629000" />
-      <workItem from="1516900078742" duration="6845000" />
+      <workItem from="1516900078742" duration="7034000" />
     </task>
     <servers />
   </component>
@@ -514,7 +503,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33029000" />
+    <option name="totallyTimeSpent" value="33218000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1449" y="-16" width="1422" height="882" extended-state="0" />
