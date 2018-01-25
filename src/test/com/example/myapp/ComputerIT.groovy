@@ -10,7 +10,7 @@ import org.junit.Test
 import static com.jayway.restassured.RestAssured.given
 import static com.jayway.restassured.RestAssured.when
 
-class ComputerTest {
+class ComputerIT {
 
     String COMPUTER_MODEL = "Kabby"
     String CPU = "Ryzen 7"
@@ -33,7 +33,6 @@ class ComputerTest {
     {
         def gsonBuilder = new GsonBuilder()
         def gson = gsonBuilder.create()
-        println gson.toJson(new Computer(COMPUTER_MODEL, RAM, CPU, HDD, GPU,PRICE,AMOUNT))
         given()
             .contentType("application/json")
             .body(gson.toJson(new Computer(COMPUTER_MODEL, RAM, CPU, HDD, GPU,PRICE,AMOUNT)).toString())
