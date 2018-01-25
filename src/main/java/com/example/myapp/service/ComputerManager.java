@@ -1,9 +1,10 @@
 package com.example.myapp.service;
 
 
-import com.example.myapp.domain.Computer;
+import com.example.myapp.entites.Computer;
 import com.example.myapp.entites.Monitor;
 import com.example.myapp.entites.Owner;
+import com.example.myapp.entites.Warranty;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -16,33 +17,32 @@ import java.util.List;
 public class ComputerManager {
 
     private List<Computer> storage = Collections.synchronizedList(new ArrayList<Computer>());
-    private List<Monitor> availabeMonitors = Collections.synchronizedList(new ArrayList<Monitor>());
-    private List<Owner> owners = Collections.synchronizedList(new ArrayList<Owner>());
 
     @PersistenceContext
     EntityManager em;
 
+//    @Inject
+//    MonitorManager monitorManager;
+//    @Inject
+//    OwnerManager ownerManagerm;
+//    @Inject
+//    WarrantyManager warrantyManager;
+
     public ComputerManager() {
-        availabeMonitors.add(new Monitor("Benqu", 27.5));
-        owners.add(new Owner("Michał"));
-        storage.add(new Computer("Kabby", 16, "Ryzen 7", 1, "GTX 1080Ti", 2999,1, availabeMonitors, owners));
-        storage.add(new Computer("Core", 1, "Intel C2D", 40, "GT9500", 100,1,  availabeMonitors, owners));
-        storage.add(new Computer("Cube", 8, "Intel i7-9600K", 2, "GTX 1080Ti", 5999,1,  availabeMonitors, owners));
+
     }
 
-
     public Computer getComputer(Integer id) {
-
         Computer computer = storage.get(id);
         if (computer == null) return new Computer();
         return computer;
     }
 
-//    public List<Computer> getAllComputers() {
-//        return storage;
-//    }
-    public void addComputer(Computer computer) {
+    public List<Computer> getAllComputers() {
+        return storage;
+    }
 
+    public void addComputer(Computer computer) {
         em.persist(computer);
     }
 
@@ -54,6 +54,14 @@ public class ComputerManager {
 
     public void removeComputer(Long id) {
         em.remove(new ComputerManager().getComputer(id.intValue()));
+    }
+
+    public void addAll() {
+
+       em.persist(new Warranty());
+       em.persist(new Monitor());
+       em.persist(new Owner());
+       em.persist(new Computer("Kabby", 16, "Ryzen 7", 1, "GTX 1080Ti", 2999,1));
     }
 
 }

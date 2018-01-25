@@ -1,8 +1,4 @@
-package com.example.myapp.domain;
-
-import com.example.myapp.entites.Monitor;
-import com.example.myapp.entites.Owner;
-import com.example.myapp.entites.Warranty;
+package com.example.myapp.entites;
 
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -11,8 +7,10 @@ import java.util.List;
 
 @XmlRootElement
 @Entity
-public class Computer  {
+public class Computer {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String model;
     private int ram;
@@ -22,32 +20,29 @@ public class Computer  {
     private String gpu;
     private double price;
     private int amout;
-    private List<Owner> owner;
+    @OneToOne
     private Warranty warranty;
-    private Calendar today = Calendar.getInstance();
-    @OneToMany
+    @ManyToOne
+    private Owner owner;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "computer", fetch = FetchType.LAZY)
     private List<Monitor> monitors;
 
     public void setMonitors(List<Monitor> monitors) {
         this.monitors = monitors;
     }
 
-
-    @OneToMany
     public List<Monitor> getMonitors() {
         return monitors;
     }
 
-    @ManyToMany
-    public List<Owner> getOwner() {
+    public Owner getOwner() {
         return owner;
     }
 
-    public void setOwner(List<Owner> owner) {
+    public void setOwner(Owner owner) {
         this.owner = owner;
     }
 
-    @OneToOne
     public Warranty getWarranty() {
         return warranty;
     }
@@ -56,13 +51,12 @@ public class Computer  {
         this.warranty = warranty;
     }
 
-    public Computer () {
+    public Computer() {
 
     }
 
-
     public Computer(String model, int ram, String cpu, int hdd, String gpu, double price,
-                    int amout, List<Monitor> monitors, List<Owner> owners) {
+                    int amout) {
         this.model = model;
         this.ram = ram;
         this.cpu = cpu;
@@ -70,14 +64,9 @@ public class Computer  {
         this.gpu = gpu;
         this.price = price;
         this.amout = amout;
-        this.monitors = monitors;
-        this.owner = owners;
-        today.add(Calendar.YEAR, 2);
-        this.warranty = new Warranty(today);
     }
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     public Long getId() {
         return id;
     }

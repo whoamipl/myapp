@@ -1,21 +1,22 @@
 package com.example.myapp.domain;
 
+import com.example.myapp.entites.Computer;
+
 import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class ComputerResponse {
-	
 
-	private List<Computer> person;
+	private List<Computer> computers;
 
-	public List<Computer> getPerson() {
-		return person;
+	public List<Computer> getComputers() {
+		return computers;
 	}
 
-	public void setPerson(List<Computer> person) {
-		this.person = person;
+	public void setComputers(List<Computer> computers) {
+		this.computers = computers;
 	}
 
 }

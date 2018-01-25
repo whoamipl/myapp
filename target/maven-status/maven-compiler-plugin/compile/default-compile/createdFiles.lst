@@ -1,8 +1,11 @@
-com/example/myapp/domain/Computer.class
 com/example/myapp/entites/Warranty.class
+com/example/myapp/entites/Computer.class
 com/example/myapp/entites/Monitor.class
 com/example/myapp/service/ComputerManager.class
 com/example/myapp/config/ApplicationConfig.class
+com/example/myapp/service/OwnerManager.class
+com/example/myapp/service/MonitorManager.class
+com/example/myapp/service/WarrantyManager.class
 com/example/myapp/entites/Owner.class
 com/example/myapp/domain/ComputerResponse.class
 com/example/myapp/rest/ComputerRESTService.class

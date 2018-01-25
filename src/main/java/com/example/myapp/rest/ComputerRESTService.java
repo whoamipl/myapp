@@ -1,12 +1,20 @@
+//TODO:
+//1.@OneToMany(cascade = .. , fetch=)
+//2.Lazy initialization <- umieć wskazać
+//3. @EJB Path("..") class RestApi {
+//						@EJB
+//						Manager m ...
+//                      @Post
+//  					@Get itp.
 package com.example.myapp.rest;
 
-import com.example.myapp.domain.Computer;
+import com.example.myapp.entites.Computer;
 import com.example.myapp.service.ComputerManager;
 
 import java.util.List;
 
+import javax.ejb.EJB;
 import javax.ejb.Stateless;
-import javax.inject.Inject;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -21,47 +29,54 @@ import javax.ws.rs.core.Response;
 @Stateless
 public class ComputerRESTService {
 
-	@Inject
-	private ComputerManager pm;
+	@EJB
+	private ComputerManager computerManager;
 
 	@GET
 	@Path("/{computerId}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Computer getPerson(@PathParam("computerId") Integer id) {
-		Computer p = pm.getComputer(id);
+		Computer p = computerManager.getComputer(id);
 		return p;
 	}
 
+	@GET
+	@Path("/test-add")
+	public void addAll() {
+		computerManager.addAll();
+	}
 
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Computer> getComputer() {
-		return pm.getAllComputer();
+		return computerManager.getAllComputer();
 	}
 
 	@POST
-	@Path("addComputer")
+	@Path("add")
 	@Consumes(MediaType.APPLICATION_JSON)
 	public Response addComputer(Computer computer) {
-		pm.addComputer(computer);
+		computerManager.addComputer(computer);
 		return Response.status(201).entity("Successful added computer. You're awesome!").build();
 	}
 
 	@DELETE
 	@Path("removeComputer/{id}")
 	public void deleteComputer(@PathParam("id") long id) {
-		pm.removeComputer(id);
+		computerManager.removeComputer(id);
 	}
 
-	//http://localhost:8080/restwsejbdemo/api/computer/addComputer@GET
+	@GET
 	@Path("test")
 	@Produces(MediaType.TEXT_PLAIN)
 	public String test() {
-		return "REST API /computer is running today!";
+		return "REST API computer is running today!";
 	}
 
 	@DELETE
 	public Response clearComputer() {
+
 		return Response.status(200).build();
 	}
+
 
 }

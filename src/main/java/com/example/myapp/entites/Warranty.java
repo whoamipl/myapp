@@ -9,14 +9,6 @@ import java.util.Calendar;
 @Entity
 public class Warranty {
 
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -34,8 +26,15 @@ public class Warranty {
 
     }
 
-    public Warranty(Calendar dueDate) {
+    public long getId() {
+        return id;
+    }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public Warranty(Calendar dueDate) {
         this.dueDate = dueDate;
     }
 }

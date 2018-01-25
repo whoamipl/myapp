@@ -8,6 +8,8 @@ public class Monitor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
+    @ManyToOne
+    private Computer computer;
 
     public Monitor() {
     }
