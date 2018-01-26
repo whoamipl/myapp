@@ -1,11 +1,10 @@
 package com.example.myapp.entites;
 
+
 import javax.persistence.*;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.util.Calendar;
 import java.util.List;
 
-@XmlRootElement
 @Entity
 public class Computer {
 
@@ -20,36 +19,13 @@ public class Computer {
     private String gpu;
     private double price;
     private int amout;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private Warranty warranty;
-    @ManyToOne
-    private Owner owner;
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private List<Owner> ownerd;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "computer", fetch = FetchType.LAZY)
     private List<Monitor> monitors;
 
-    public void setMonitors(List<Monitor> monitors) {
-        this.monitors = monitors;
-    }
-
-    public List<Monitor> getMonitors() {
-        return monitors;
-    }
-
-    public Owner getOwner() {
-        return owner;
-    }
-
-    public void setOwner(Owner owner) {
-        this.owner = owner;
-    }
-
-    public Warranty getWarranty() {
-        return warranty;
-    }
-
-    public void setWarranty(Warranty warranty) {
-        this.warranty = warranty;
-    }
 
     public Computer() {
 
@@ -65,7 +41,6 @@ public class Computer {
         this.price = price;
         this.amout = amout;
     }
-
 
     public Long getId() {
         return id;

@@ -17,7 +17,7 @@ class ComputerIT {
     String GPU = "GTX 1080Ti"
     int RAM = 16
     int HDD = 1
-    int PRICE = 2999
+    double PRICE = 2999
     int AMOUNT = 1
 
     @BeforeClass
@@ -25,19 +25,18 @@ class ComputerIT {
     {
         RestAssured.baseURI = "http://localhost"
         RestAssured.port = 8080
-        RestAssured.basePath = "/myapp/api/computer/"
+        RestAssured.basePath = "/webapi/computer/"
     }
 
     @Test
     void "should add computer and return status 201" ()
     {
-        def gsonBuilder = new GsonBuilder()
-        def gson = gsonBuilder.create()
+        def gson = new GsonBuilder().create()
         given()
-            .contentType("application/json")
-            .body(gson.toJson(new Computer(COMPUTER_MODEL, RAM, CPU, HDD, GPU,PRICE,AMOUNT)).toString())
+            .contentType(ContentType.JSON)
+            .body(gson.toJson(new Computer(COMPUTER_MODEL, RAM, CPU, HDD, GPU,PRICE,AMOUNT)))
         when()
-            .post("/add").
+            .post("add").
         then()
             .statusCode(201)
     }

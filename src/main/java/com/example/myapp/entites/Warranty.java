@@ -23,7 +23,7 @@ public class Warranty {
     }
 
     public Warranty() {
-
+        dueDate = Calendar.getInstance();
     }
 
     public long getId() {

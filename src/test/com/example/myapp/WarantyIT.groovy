@@ -1,26 +1,22 @@
 package com.example.myapp
 
 import com.jayway.restassured.RestAssured
-import static com.jayway.restassured.RestAssured.when
 import org.junit.BeforeClass
 import org.junit.Test
 
-class ServerIT {
+class WarantyIT
+{
 
     @BeforeClass
     static void "set up rest assured properties" ()
     {
         RestAssured.baseURI = "http://localhost"
         RestAssured.port = 8080
-        RestAssured.basePath = "/webapi/computer/"
+        RestAssured.basePath = "/webapi/monitor/"
     }
 
     @Test
-    void "resource should return status 200" ()
-    {
-        when()
-                .get("test").
-                then()
-                    .statusCode(200)
+    static void "should add new warranty and return 201" () {
+
     }
 }

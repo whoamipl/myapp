@@ -1,5 +1,7 @@
 package com.example.myapp.entites;
 
+import com.example.myapp.entites.Computer;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -9,7 +11,7 @@ public class Owner {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @OneToMany
+    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Computer> computerList;
 
     public Owner() {

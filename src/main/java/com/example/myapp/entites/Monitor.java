@@ -1,5 +1,7 @@
 package com.example.myapp.entites;
 
+import com.example.myapp.entites.Computer;
+
 import javax.persistence.*;
 
 @Entity
@@ -8,7 +10,7 @@ public class Monitor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Computer computer;
 
     public Monitor() {

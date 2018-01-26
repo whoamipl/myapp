@@ -14,7 +14,6 @@ import com.example.myapp.service.ComputerManager;
 import java.util.List;
 
 import javax.ejb.EJB;
-import javax.ejb.Stateless;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -26,47 +25,41 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("computer")
-@Stateless
 public class ComputerRESTService {
 
 	@EJB
 	private ComputerManager computerManager;
 
-	@GET
 	@Path("/{computerId}")
+	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public Computer getPerson(@PathParam("computerId") Integer id) {
-		Computer p = computerManager.getComputer(id);
-		return p;
+	public Computer getComputer(@PathParam("computerId") Integer id) {
+		Computer c = computerManager.getComputer(id);
+		return c;
 	}
 
-	@GET
-	@Path("/test-add")
-	public void addAll() {
-		computerManager.addAll();
-	}
 
 	@Produces(MediaType.APPLICATION_JSON)
 	public List<Computer> getComputer() {
 		return computerManager.getAllComputer();
 	}
 
+	@Path("/add")
 	@POST
-	@Path("add")
-	@Consumes(MediaType.APPLICATION_JSON)
+	@Consumes({MediaType.APPLICATION_JSON})
 	public Response addComputer(Computer computer) {
 		computerManager.addComputer(computer);
-		return Response.status(201).entity("Successful added computer. You're awesome!").build();
+		return Response.status(201).entity("Computer was successfully added").build();
 	}
 
+	@Path("/remove/{id}")
 	@DELETE
-	@Path("removeComputer/{id}")
 	public void deleteComputer(@PathParam("id") long id) {
 		computerManager.removeComputer(id);
 	}
 
+	@Path("/test")
 	@GET
-	@Path("test")
 	@Produces(MediaType.TEXT_PLAIN)
 	public String test() {
 		return "REST API computer is running today!";
@@ -74,7 +67,6 @@ public class ComputerRESTService {
 
 	@DELETE
 	public Response clearComputer() {
-
 		return Response.status(200).build();
 	}
 

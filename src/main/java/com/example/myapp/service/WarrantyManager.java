@@ -21,7 +21,7 @@ public class WarrantyManager {
     public WarrantyManager() {
         Calendar today = Calendar.getInstance();
         today.add(Calendar.YEAR, 2);
-        storage.add(new Warranty(today));
+        storage.add(new Warranty());
     }
 
     public Warranty getWarranty(Integer id) {
@@ -41,8 +41,6 @@ public class WarrantyManager {
     public List<Warranty> getAllWarranty() {
         return  storage;
     }
-
-    public java.lang.String test() {return "REST Service is running";}
 
     public void removeWarranty(Long id) {
         em.remove(new WarrantyManager().getWarranty(id.intValue()));
