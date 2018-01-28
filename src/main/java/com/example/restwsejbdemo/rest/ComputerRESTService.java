@@ -94,7 +94,7 @@ public class ComputerRESTService {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     @Transactional
-    public String testRelation() {
+    public String testManyToManyRelation() {
 
         Owner owner1 = new Owner("Jan", "Kowalski", "Warszawa");
         Owner owner2 = new Owner("Kamil", "Nowak", "Sosnowiec");
@@ -107,18 +107,16 @@ public class ComputerRESTService {
         owners.add(owner1);
         owners.add(owner2);
 
-
         computer1.setOwnersList(owners);
-
         computerManager.updateComputer(computer1);
 
-        return "Test";
+        return "Relation ManyToMany works";
     }
 
     @GET
     @Path("/lazyexptest")
     @Produces(MediaType.TEXT_PLAIN)
-    public Boolean lazyInitializationExp() {
+    public String lazyInitializationExp() {
 
         Owner owner1 = new Owner("Jan", "Kowalski", "Warszawa");
         Owner owner2 = new Owner("Kamil", "Nowak", "Sosnowiec");
@@ -139,12 +137,9 @@ public class ComputerRESTService {
             System.out.println(alreadyAdded.getProducer().getName());
         } catch (Exception e) {
             e.printStackTrace();
-            return true;
+            return "LazyInitializationException";
         }
-        return false;
+        return "No problem";
     }
-
-
-
 
 }
